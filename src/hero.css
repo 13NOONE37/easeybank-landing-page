@@ -25,7 +25,7 @@
   text-align: center;
   color: var(--dark);
 
-  max-width: 402px;
+  max-width: 15ch;
 }
 .hero--description {
   margin-top: 16px;
