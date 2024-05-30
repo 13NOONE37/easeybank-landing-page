@@ -1,0 +1,114 @@
+.section__articles {
+  padding: 88px var(--section-padding);
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.section__articles .container {
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 31px;
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.article {
+  background-color: var(--white);
+  border-radius: 0 0 5px 5px;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.article--image {
+  aspect-ratio: 316 / 200;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.article--author {
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: var(--fw-medium);
+  letter-spacing: -.16px;
+  color: var(--greyish--blue);
+  margin: 0 var(--section-padding);
+  margin-top: var(--section-padding);
+}
+
+.article--heading {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: var(--fw-light);
+  letter-spacing: -.29px;
+  color: var(--dark);
+  margin: 0 var(--section-padding);
+  transition: var(--transition-1);
+  margin-top: 8px;
+}
+
+.article--shortContent {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: var(--fw-medium);
+  letter-spacing: -.2px;
+  color: var(--greyish--blue);
+  margin: 0 var(--section-padding);
+  margin-top: 8px;
+  margin-bottom: 44px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .article--heading:hover {
+    color: var(--green);
+  }
+}
+
+@media screen and (width >= 550px) {
+  .section__articles {
+    align-items: start;
+  }
+
+  .section__articles .container {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: start center;
+    display: grid;
+  }
+
+  .article {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (width >= 900px) {
+  .section__articles {
+    padding: 80px var(--section-padding);
+  }
+
+  .section__articles .container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: start center;
+    gap: 30px;
+    margin-top: 40px;
+    display: grid;
+  }
+
+  .article--image {
+    aspect-ratio: 255 / 200;
+  }
+
+  .article {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=index.62086a76.css.map */
