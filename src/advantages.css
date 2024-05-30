@@ -4,7 +4,7 @@
   background-color: #f4f5f7;
 }
 .section__advantages .content {
-  padding: 64px var(--section-padding);
+  padding: 4rem var(--section-padding);
 
   margin: auto;
   max-width: var(--section-width);
@@ -15,19 +15,19 @@
   align-items: center;
 }
 .section__advantages .section--heading {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: var(--fw-light);
-  letter-spacing: -0.57px;
+  letter-spacing: -0.035625rem;
   color: var(--dark);
   max-width: 12ch;
   text-align: center;
 }
 .section__advantages .section--description {
-  margin-top: 14px;
-  font-size: 15px;
+  margin-top: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: var(--fw-medium);
-  line-height: 25px;
-  letter-spacing: -0.23px;
+  line-height: 1.5625rem;
+  letter-spacing: -0.014375rem;
   color: var(--greyish--blue);
   text-align: center;
   max-width: 330px;
@@ -36,12 +36,12 @@
   overflow: hidden;
   width: 100%;
 
-  margin-top: 56px;
+  margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
 
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
 }
 .advantage {
   display: flex;
@@ -49,19 +49,19 @@
   align-items: center;
 }
 .advantage--heading {
-  margin-top: 24px;
-  font-size: 20px;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
   font-weight: var(--fw-light);
-  line-height: 28px;
-  letter-spacing: -0.36px;
+  line-height: 1.75rem;
+  letter-spacing: -0.0225rem;
   color: var(--dark);
 }
 .advantage--description {
-  margin-top: 16px;
-  font-size: 15px;
+  margin-top: 1rem;
+  font-size: 0.9375rem;
   font-weight: var(--fw-medium);
-  line-height: 25px;
-  letter-spacing: -0.23px;
+  line-height: 1.5625rem;
+  letter-spacing: -0.014375rem;
   color: var(--greyish--blue);
   text-align: center;
   max-width: 330px;
@@ -71,7 +71,7 @@
   .section__advantages .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 1.875rem;
     align-self: center;
   }
   .section__advantages .section--heading {
@@ -97,14 +97,14 @@
     align-items: start;
   }
   .section__advantages .section--heading {
-    font-size: 40px;
-    line-height: 64px;
-    letter-spacing: -0.71px;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.44375rem;
   }
   .section__advantages .section--description {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.0175rem;
     text-align: start;
   }
 
@@ -112,16 +112,16 @@
     align-items: start;
   }
   .advantage--heading {
-    margin-top: 40px;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.43px;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.026875rem;
   }
   .advantage--description {
-    margin-top: 26px;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: -0.25px;
+    margin-top: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.015625rem;
     text-align: start;
   }
 }
