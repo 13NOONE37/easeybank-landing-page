@@ -1,0 +1,107 @@
+.section__articles {
+  padding: 88px var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__articles .container {
+  overflow: hidden;
+
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  list-style-type: none;
+}
+.article {
+  width: 100%;
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 0 0 5px 5px;
+  text-decoration: none;
+}
+.article--image {
+  width: 100%;
+  aspect-ratio: 316/200;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.article--author {
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: var(--fw-medium);
+  letter-spacing: -0.16px;
+  color: var(--greyish--blue);
+
+  margin: 0 var(--section-padding);
+  margin-top: var(--section-padding);
+}
+.article--heading {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: var(--fw-light);
+  letter-spacing: -0.29px;
+  color: var(--dark);
+
+  margin: 0 var(--section-padding);
+  margin-top: 8px;
+  transition: var(--transition-1);
+}
+.article--shortContent {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: var(--fw-medium);
+  letter-spacing: -0.2px;
+  color: var(--greyish--blue);
+
+  margin: 0 var(--section-padding);
+  margin-top: 8px;
+  margin-bottom: 44px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .article--heading:hover {
+    color: var(--green);
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .section__articles {
+    align-items: start;
+  }
+  .section__articles .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: start center;
+  }
+  .article {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .section__articles {
+    padding: 80px var(--section-padding);
+  }
+
+  .section__articles .container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    place-items: start center;
+  }
+  .article--image {
+    aspect-ratio: 255/200;
+  }
+  .article {
+    width: 100%;
+    height: 100%;
+  }
+}
