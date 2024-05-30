@@ -36,84 +36,84 @@ const navElements = document.querySelector('.header--navigation ul');
 });
 
 /*GSAP */
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-let mm = gsap.matchMedia();
+// gsap.registerPlugin(ScrollTrigger);
+// let mm = gsap.matchMedia();
 
-const advantagesChildren = document.querySelector(
-  '.section__advantages .container',
-).children;
-const articlesChildren = document.querySelector(
-  '.section__articles .container',
-).children;
-mm.add(
-  {
-    isDesktop: '(min-width: 1100px)',
-    isTablet: '(min-width: 550px)',
-    isMobile: '(max-width:550px)',
-  },
-  (context) => {
-    const { isDesktop, isTablet, isMobile } = context.conditions;
+// const advantagesChildren = document.querySelector(
+//   '.section__advantages .container',
+// ).children;
+// const articlesChildren = document.querySelector(
+//   '.section__articles .container',
+// ).children;
+// mm.add(
+//   {
+//     isDesktop: '(min-width: 1100px)',
+//     isTablet: '(min-width: 550px)',
+//     isMobile: '(max-width:550px)',
+//   },
+//   (context) => {
+//     const { isDesktop, isTablet, isMobile } = context.conditions;
 
-    [...advantagesChildren, ...articlesChildren].forEach((item, index) => {
-      gsap.fromTo(
-        item,
-        {
-          opacity: 0,
-          x: isDesktop || isTablet ? 0 : `${100 * Math.pow(-1, index)}%`,
-        },
-        {
-          opacity: 1,
-          x: 0,
+//     [...advantagesChildren, ...articlesChildren].forEach((item, index) => {
+//       gsap.fromTo(
+//         item,
+//         {
+//           opacity: 0,
+//           x: isDesktop || isTablet ? 0 : `${100 * Math.pow(-1, index)}%`,
+//         },
+//         {
+//           opacity: 1,
+//           x: 0,
 
-          scrollTrigger: {
-            trigger: item,
-            start: '0% 80%',
-          },
-          duration: 0.75,
-          ease: 'power1.out',
-        },
-      );
-    });
-  },
-);
+//           scrollTrigger: {
+//             trigger: item,
+//             start: '0% 80%',
+//           },
+//           duration: 0.75,
+//           ease: 'power1.out',
+//         },
+//       );
+//     });
+//   },
+// );
 
-const heroMockup = document.querySelector('.section__hero--mockup');
-mm.add(
-  {
-    isDesktop: '(min-width:820px)',
-    isMobile: '(max-width:820px)',
-  },
-  (context) => {
-    const { isDesktop } = context.conditions;
+// const heroMockup = document.querySelector('.section__hero--mockup');
+// mm.add(
+//   {
+//     isDesktop: '(min-width:820px)',
+//     isMobile: '(max-width:820px)',
+//   },
+//   (context) => {
+//     const { isDesktop } = context.conditions;
 
-    gsap.fromTo(
-      heroMockup,
-      { opacity: 0, x: isDesktop ? 100 : 0, y: isDesktop ? 0 : -100 },
-      {
-        opacity: 1,
-        x: 0,
-        y: 0,
-        delay: 1.5,
-        duration: 0.75,
-        ease: 'sine.inOut',
-      },
-    );
-  },
-);
+//     gsap.fromTo(
+//       heroMockup,
+//       { opacity: 0, x: isDesktop ? 100 : 0, y: isDesktop ? 0 : -100 },
+//       {
+//         opacity: 1,
+//         x: 0,
+//         y: 0,
+//         delay: 1.5,
+//         duration: 0.75,
+//         ease: 'sine.inOut',
+//       },
+//     );
+//   },
+// );
 
-const heroChildren = document.querySelector('.section__hero--text').children;
-gsap.fromTo(
-  heroChildren,
-  { opacity: 0, x: -100 },
-  {
-    opacity: 1,
-    x: 0,
-    delay: 0.5,
-    stagger: 0.25,
-    duration: 0.5,
-    ease: 'sine.inOut',
-  },
-);
+// const heroChildren = document.querySelector('.section__hero--text').children;
+// gsap.fromTo(
+//   heroChildren,
+//   { opacity: 0, x: -100 },
+//   {
+//     opacity: 1,
+//     x: 0,
+//     delay: 0.5,
+//     stagger: 0.25,
+//     duration: 0.5,
+//     ease: 'sine.inOut',
+//   },
+// );
